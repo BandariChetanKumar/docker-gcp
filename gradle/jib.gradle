@@ -1,0 +1,22 @@
+jib {
+    def dockerRegistry = project.findProperty("docker.registry")
+    def enableRemoteDebugging = project.findProperty("remote.debugger.enabled") == "true"
+
+    from {
+        image = "gcr.io/distroless/java:11"
+    }
+    to {
+        image = "${dockerRegistry}/${rootProject.name}"
+        tags = ["latest"]
+    }
+    container {
+        jvmFlags = ["-XX:MinRAMPercentage=50.0",
+                    "-XX:MaxRAMPercentage=50.0",
+                    "-XX:InitialRAMPercentage=50.0",
+                    "-XX:+UseContainerSupport",
+                    "-XX:+HeapDumpOnOutOfMemoryError",
+                    "-XX:HeapDumpPath=/dumps/${rootProject.name}.dump".toString(),
+                    "-XshowSettings:vm"]
+        jvmFlags += enableRemoteDebugging ? ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"] : []
+    }
+}

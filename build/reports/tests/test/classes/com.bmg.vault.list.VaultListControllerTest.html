@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - VaultListControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>VaultListControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.bmg.vault.list.html">com.bmg.vault.list</a> &gt; VaultListControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.388s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getByUidShouldBeReturnVaultListFromService()</td>
+<td class="success">0.388s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:21:06.003 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:21:06.040 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:21:06.117 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.bmg.vault.list.VaultListControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+11:21:06.152 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bmg.vault.list.VaultListControllerTest], using SpringBootContextLoader
+11:21:06.160 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bmg.vault.list.VaultListControllerTest]: class path resource [com/bmg/vault/list/VaultListControllerTest-context.xml] does not exist
+11:21:06.161 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.bmg.vault.list.VaultListControllerTest]: class path resource [com/bmg/vault/list/VaultListControllerTestContext.groovy] does not exist
+11:21:06.161 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.bmg.vault.list.VaultListControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:21:06.162 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.bmg.vault.list.VaultListControllerTest]: VaultListControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:21:06.285 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.bmg.vault.list.VaultListControllerTest]
+11:21:06.467 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/macbookpro/Dev/bmg/vault/repos/bmg-cloud-vault-backend/build/classes/java/main/com/bmg/vault/VaultApplication.class]
+11:21:06.469 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.bmg.vault.VaultApplication for test class com.bmg.vault.list.VaultListControllerTest
+11:21:06.474 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.bmg.vault.list.VaultListControllerTest]: using defaults.
+11:21:06.475 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:21:06.517 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@17df38bb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@21bf30c0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4131dd37, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1f33e59a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71471c27, org.springframework.test.context.transaction.TransactionalTestExecutionListener@29261bff, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6631a389, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@66ae95e0, org.springframework.test.context.event.EventPublishingTestExecutionListener@2f411b36, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@36a104c2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5de7c474, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4ff45bbd, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@684b61de, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@56f2ff01, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@355555cf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5891c96b]
+11:21:06.523 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5c8d80f7 testClass = VaultListControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2d253ad1 testClass = VaultListControllerTest, locations = '{}', classes = '{class com.bmg.vault.VaultApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@3229446b, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@d8099fc4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@41c31868, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@70c90ace, [ImportsContextCustomizer@d9b701 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@15a0be8e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1f3caa60, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@4c9833c8, org.springframework.boot.test.context.SpringBootTestArgs@1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+11:21:06.582 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+2020-08-19 11:21:17.441  WARN 1661 --- [    Test worker] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-08-19 11:21:22.450  INFO 1661 --- [    Test worker] c.b.vault.list.VaultListControllerTest   : Starting VaultListControllerTest on macbooks-MacBook-Pro.local with PID 1661 (started by macbookpro in /Users/macbookpro/Dev/bmg/vault/repos/bmg-cloud-vault-backend)
+2020-08-19 11:21:22.454  INFO 1661 --- [    Test worker] c.b.vault.list.VaultListControllerTest   : No active profile set, falling back to default profiles: default
+2020-08-19 11:21:25.887  INFO 1661 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-19 11:21:27.387  INFO 1661 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-08-19 11:21:27.388  INFO 1661 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-08-19 11:21:27.409  INFO 1661 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 21 ms
+2020-08-19 11:21:27.480  INFO 1661 --- [    Test worker] c.b.vault.list.VaultListControllerTest   : Started VaultListControllerTest in 20.869 seconds (JVM running for 27.956)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/lists/songs
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json&quot;, Accept:&quot;application/json&quot;]
+             Body = &lt;no character encoding set&gt;
+    Session Attrs = {}
+
+Handler:
+             Type = com.bmg.vault.list.VaultListController
+           Method = com.bmg.vault.list.VaultListController#getByUid(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.4.1</a> at 19 Aug, 2020 11:21:28 AM</p>
+</div>
+</div>
+</body>
+</html>
